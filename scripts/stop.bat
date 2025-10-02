@@ -1,7 +1,7 @@
 @echo off
 chcp 65001 >nul 2>&1
 
-echo 🛑 KDT_BE12_Toy_Project4 종료 중...
+echo 🛑 bookin 종료 중...
 echo =================================
 
 REM 프로젝트 루트로 이동

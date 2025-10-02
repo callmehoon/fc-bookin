@@ -1,26 +1,3 @@
-# 토이 프로젝트 4 : 챗봇을 넘어 콜봇으로 based on AI (RAG + LLM)
-
-### [프로젝트 개요]
-- **프로젝트 명** : 챗봇을 넘어 콜봇으로 based on AI (RAG + LLM)
-- **상세 내용 :** [프로젝트 RFP 노션 링크](https://www.notion.so/Toy-Project-4-22f9047c353d80fea377d6a4c4b23415?source=copy_link)
-- **수행 및 결과물 제출 기한** : 7/14 (월) ~ 8/1 (금) 14:00
-- **멘토진 코드리뷰 기한** : 8/4 (월) ~ 8/17 (일), 2주 간 진행
-
-
-### [프로젝트 진행 및 제출 방법]
-- 본 패스트캠퍼스 Github의 Repository를 각 조별의 Github Repository를 생성 후 Fork합니다.
-    - 패스트캠퍼스 깃헙은 Private 형태 (Public 불가)
-- 조별 레포의 최종 branch → 패스트캠퍼스 업스트림 Repository의 main branch의 **PR 상태**로 제출합니다.
-    - **PR TITLE : N조 최종 제출**
-    - Pull Request 링크를 LMS로도 제출해 주셔야 최종 제출 완료 됩니다. (제출자: 조별 대표자 1인)
-    - LMS를 통한 과제 미제출 시 점수가 부여되지 않습니다.
-- PR 제출 시 유의사항
-    - 프로젝트 진행 결과 및 과업 수행 내용은 README.md에 상세히 작성 부탁 드립니다.
-    - 멘토님들께서 어플리케이션 실행을 위해 확인해야 할 환경설정 값 등도 반드시 PR 부가 설명란 혹은 README.md에 작성 부탁 드립니다.
-    - **Pull Request에서 제출 후 절대 병합(Merge)하지 않도록 주의하세요!**
-    - 수행 및 제출 과정에서 문제가 발생한 경우, 바로 질의응답 멘토님이나 강사님에게 얘기하세요! (강사님께서 필요시 개별 힌트 제공)
-
-
 # 📚 책크인 - AI 기반 온라인 서점 프로젝트
 
 ## 프로젝트 소개 Introduction
@@ -304,8 +281,8 @@ Spring Boot와 AI 기술을 융합한 지능형 온라인 서점 시스템으로
 
 ### 1. 프로젝트 클론
 ```bash
-git clone https://github.com/your-username/KDT_BE12_Toy_Project4.git
-cd KDT_BE12_Toy_Project4
+git clone https://github.com/your-username/bookin.git
+cd bookin
 ```
 
 ### 2. 데이터베이스 설정
@@ -317,9 +294,9 @@ cd KDT_BE12_Toy_Project4
 
 #### 로컬 MySQL 사용 (개발용)
 ```sql
-CREATE DATABASE tp4team5 CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+CREATE DATABASE bookin CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 CREATE USER 'bookstore_user'@'localhost' IDENTIFIED BY 'your_password';
-GRANT ALL PRIVILEGES ON tp4team5.* TO 'bookstore_user'@'localhost';
+GRANT ALL PRIVILEGES ON bookin.* TO 'bookstore_user'@'localhost';
 FLUSH PRIVILEGES;
 ```
 
@@ -327,7 +304,7 @@ FLUSH PRIVILEGES;
 ```bash
 docker run --name mysql-bookstore \
   -e MYSQL_ROOT_PASSWORD=rootpassword \
-  -e MYSQL_DATABASE=tp4team5 \
+  -e MYSQL_DATABASE=bookin \
   -e MYSQL_USER=bookstore_user \
   -e MYSQL_PASSWORD=your_password \
   -p 3306:3306 -d mysql:8.0
@@ -338,7 +315,7 @@ docker run --name mysql-bookstore \
 
 ```properties
 # 애플리케이션 이름
-spring.application.name=KDT_BE12_Toy_Project4
+spring.application.name=bookin
 
 # 데이터베이스 설정 (AWS RDS)
 spring.datasource.url=jdbc:mysql://your-rds-endpoint:3306/your_database?serverTimezone=Asia/Seoul
@@ -571,7 +548,7 @@ python main.py
 mvn clean install
 mvn spring-boot:run
 
-# 또는 IDE에서 AIToyProjectApplication.java 실행
+# 또는 IDE에서 BookInApplication.java 실행
 ```
 
 #### 방법 3: 스크립트 사용
@@ -750,7 +727,7 @@ Failed to send email
 
 ## 📂 프로젝트 구조
 ```
-KDT_BE12_Toy_Project4/
+bookin/
 ├── src/main/java/bookstore_ai_project/       # Spring Boot 메인 애플리케이션
 │   ├── config/                               # 설정 클래스 (SecurityConfig, WebConfig)
 │   ├── controller/                           # 컨트롤러 (AIChatController, ProductController 등)

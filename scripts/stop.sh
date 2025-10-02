@@ -4,7 +4,7 @@
 export LC_ALL=ko_KR.UTF-8 2>/dev/null || export LC_ALL=C.UTF-8 2>/dev/null || export LC_ALL=en_US.UTF-8 2>/dev/null || true
 export LANG=ko_KR.UTF-8 2>/dev/null || export LANG=C.UTF-8 2>/dev/null || export LANG=en_US.UTF-8 2>/dev/null || true
 
-echo "🛑 KDT_BE12_Toy_Project4 종료 중..."
+echo "🛑 bookin 종료 중..."
 echo "================================="
 
 # 프로젝트 루트로 이동

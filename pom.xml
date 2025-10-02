@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.assignment.bookstore</groupId>
-    <artifactId>KDT_BE12_Toy_Project4</artifactId>
+    <artifactId>bookin</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>KDT_BE12_Springboot_Assignment</name>
     <description>KDT_BE12_Springboot_Assignment</description>

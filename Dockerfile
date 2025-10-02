@@ -25,4 +25,4 @@ RUN ./mvnw clean package -DskipTests -B
 
 # 가상환경 관련 ENV 제거
 EXPOSE 8080
-CMD ["java", "-jar", "target/KDT_BE12_Toy_Project4-0.0.1-SNAPSHOT.jar"]
+CMD ["java", "-jar", "target/bookin-0.0.1-SNAPSHOT.jar"]

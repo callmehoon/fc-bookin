@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "🔄 KDT_BE12_Toy_Project4 업데이트 중..."
+echo "🔄 bookin 업데이트 중..."
 echo "===================================="
 
 # Git 업데이트

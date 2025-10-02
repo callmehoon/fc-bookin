@@ -2,7 +2,7 @@
 chcp 65001 >nul 2>&1
 setlocal enabledelayedexpansion
 
-echo 🔄 KDT_BE12_Toy_Project4 업데이트 중...
+echo 🔄 bookin 업데이트 중...
 echo ====================================
 
 REM 프로젝트 루트로 이동 (scripts 폴더에서 1단계 위로)

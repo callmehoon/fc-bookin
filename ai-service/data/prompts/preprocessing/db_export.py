@@ -5,10 +5,10 @@ import sys
 try:
     # DB 연결
     conn = mysql.connector.connect(
-        host='tp4team5.cny6cmeagio6.ap-northeast-2.rds.amazonaws.com',
+        host='bookin.cny6cmeagio6.ap-northeast-2.rds.amazonaws.com',
         user='admin',
         password='corzmdls1!',
-        database='tp4team5'
+        database='bookin'
     )
 
     cursor = conn.cursor()
@@ -20,8 +20,8 @@ try:
     print(f"총 {len(tables)}개 테이블 발견")
 
     # SQL 파일 생성
-    with open('../../../../RDB/tp4team5_full_export.sql', 'w', encoding='utf-8') as f:
-        f.write("-- tp4team5 데이터베이스 백업\n")
+    with open('../../../../RDB/bookin_full_export.sql', 'w', encoding='utf-8') as f:
+        f.write("-- bookin 데이터베이스 백업\n")
         f.write("-- 생성일: " + str(datetime.now()) + "\n\n")
 
         for (table,) in tables:
@@ -61,7 +61,7 @@ try:
                     f.write(f"INSERT INTO `{table}` (`{columns_str}`) VALUES ({values_str});\n")
                 f.write("\n")
 
-    print("✅ tp4team5_full_export.sql 파일 생성 완료!")
+    print("✅ bookin_full_export.sql 파일 생성 완료!")
 
 except Exception as e:
     print(f"❌ 오류 발생: {e}")

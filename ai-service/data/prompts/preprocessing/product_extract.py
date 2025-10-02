@@ -86,7 +86,7 @@ def load_db_config_from_properties():
         print("기본 설정 사용 - AWS RDS 설정")
         # AWS RDS 기본값으로 설정
         db_config.update({
-            'host': 'tp4team5.cny6cmeagio6.ap-northeast-2.rds.amazonaws.com',
+            'host': 'bookin.cny6cmeagio6.ap-northeast-2.rds.amazonaws.com',
             'user': 'admin',
             'password': 'corzmdls1!'
         })

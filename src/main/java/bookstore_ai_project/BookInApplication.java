@@ -11,7 +11,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
  */
 @SpringBootApplication
 @EnableScheduling  // 스케줄러 활성화 - 휴면 계정 처리 등 배치 작업용
-public class AIToyProjectApplication {
+public class BookInApplication {
 
     /**
      * 애플리케이션 메인 메서드 - Spring Boot 컨테이너 시작
@@ -21,7 +21,7 @@ public class AIToyProjectApplication {
      * @param args 명령행 인수
      */
     public static void main(String[] args) {
-        SpringApplication.run(AIToyProjectApplication.class, args);
+        SpringApplication.run(BookInApplication.class, args);
     }
 
 }
